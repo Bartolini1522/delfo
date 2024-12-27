@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contatti</title>
+    <style>
+      body {
+        background-image: url('sfondo_legno.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        font-weight: 200;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .inputbox1 {
+        text-align: center;
+        margin: auto;
+        width: 600px;
+        background-color: rgba(220, 220, 220, 0.8);
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 20px;
+        position: relative;
+      }
+
+      .menu-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        transition: background-color 0.3s;
+      }
+
+      .menu-button:hover {
+        background-color: rgba(100, 100, 100, 0.9);
+      }
+
+      .menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu > ul > li {
+        margin: 5px 0;
+      }
+
+      .menu > ul > li > a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: block;
+      }
+
+      .menu > ul > li > a:hover {
+        background-color: rgba(100, 100, 100, 0.9);
+      }
+
+      .footer {
+        background-color: rgba(220, 220, 220, 0.8);
+        border-radius: 20px;
+        text-align: center;
+        margin: 20px auto;
+        padding: 10px;
+        width: 90%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+      }
+    </script>
+  </head>
+  <body>
+    <div class="inputbox1">
+      <button class="menu-button" onclick="toggleMenu()">Menu</button>
+      <div class="menu">
+        <ul>
+          <li><a href="https://www.delfo.top">Home</a></li>
+          <li><a href="https://www.delfo.top/contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <h1>Contatti</h1>
+      <p>In caso di necessità potete contattare l'amministratore del sito cliccando  <a href="mailto:webmaster@delfo.top">qui.</a></p>
+    </div>
+
+    <div class="footer">
+      &copy; 2024 - Delfo.top. Tutti i diritti riservati.
+    </div>
+  </body>
+</html>
